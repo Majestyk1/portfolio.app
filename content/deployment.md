@@ -1,9 +1,7 @@
 # Deployment & Launch
 
-## Hosting Options
-- **Netlify / Vercel:** Easy continuous deployment from a Git repository. Both offer free tiers with HTTPS, custom domain support, and serverless functions if needed. Ideal for React/Vite apps.  
-- **Firebase Hosting:** Integrated with Firebase services. Good for PWAs with fast CDN delivery. Also provides free SSL and simple CLI deployment.  
-- **GitHub Pages:** A simple, free option for static sites, especially useful if you want to host directly from your GitHub repo. Best used with SPA routing fallback configured.
+## Host/deployment
+- **Vercel:** Easy continuous deployment from a Git repository. Offers free tiers with HTTPS, custom domain support, and serverless functions if needed. Ideal for React/Vite apps.  
 
 ## Launch Steps
 1. **Finalize content:** Proofread all copy, ensure all images are optimized (compressed and appropriately sized), and double-check accessibility tags.

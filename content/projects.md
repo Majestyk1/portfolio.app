@@ -7,17 +7,17 @@
 
 ---
 
-### HVAC Service Portal
+### airdoctor-refactor
 **Role:** Full-Stack Developer  
 **Tech:** React, Tailwind CSS, Firebase (Firestore), Node.js  
 **Description:** A custom-built content management system (CMS) designed for HVAC technicians to log, manage, and track service calls, parts inventory, and customer information. I created a streamlined dashboard UI with React and Tailwind, and used Firebase Firestore to manage backend data. This project improved technician workflow and client communication for a real small business, demonstrating my practical understanding of database structure and real-world user needs.
 
 ---
 
-### RememberMe AI
-**Role:** Hackathon Developer  
-**Tech:** React, Python (Flask), OpenAI API, Tailwind CSS  
-**Description:** A 48-hour hackathon project that created a personalized AI companion for memory recall and journaling. Users could input important moments, facts, or goals — and the app would use OpenAI to summarize, recall, and reframe them in helpful ways. I led the UI development and handled integration with the backend Flask API. This project demonstrates my ability to work fast, collaborate under pressure, and integrate AI services into full-stack applications.
+### WTWR (What to Wear)
+**Role:** Full-Stack Developer  
+**Tech:** React, Express.js, MongoDB, Tailwind CSS  
+**Description:** WTWR is a full-stack weather-powered clothing recommendation app built as a final capstone project during my TripleTen bootcamp. The app fetches real-time weather data and suggests appropriate outfits based on current conditions and user preferences. I built the frontend using React and Tailwind CSS to create a smooth, responsive UI, while the backend — powered by Express and MongoDB — handles user authentication, weather data processing, and clothing item management. This project showcases my ability to design and implement a complete, user-centric application from end to end.
 
 ---
 
@@ -28,6 +28,3 @@
 
 ---
 
-### Additional Projects (Optional Highlights)
-- **AI Pokémon Generator:** A fun prototype using OpenAI’s API to generate new Pokémon based on user prompts. Great for experimenting with prompt engineering, data display, and user input validation.
-- **Spotify Clone Challenge:** A 1-hour UI challenge where I recreated Spotify’s landing page using mock data, React, and Tailwind. This tested my speed, layout precision, and creative use of utility classes under time pressure.

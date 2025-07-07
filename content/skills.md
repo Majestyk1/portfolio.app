@@ -6,14 +6,12 @@
 - **HTML5 & CSS3:** Semantic structure, accessibility-first markup, responsive design.  
 - **Tailwind CSS:** Utility-first styling, dark mode theming, responsive design.  
 - **Vite:** Lightning-fast dev server and build tool for modern web apps.  
-- **Framer Motion:** Lightweight animation library for subtle UI transitions and scroll-based effects.  
 
 ## Back-End & Serverless
 - **Firebase Firestore:** NoSQL document-based database for real-time updates and scalable storage.  
 - **Firebase Auth:** Simple and secure authentication for user sign-ins (Google, email, etc).  
 - **Firebase Hosting:** Fast CDN for static site deployment with HTTPS.  
 - **Node.js & Express:** RESTful APIs and server-side routing (basic to intermediate use).  
-- **Python (Flask):** Light experience building APIs for hackathon projects and AI integration.
 
 ## APIs & Integrations
 - **Google Maps API:** Location rendering, custom markers, place search, and routing.  
@@ -28,8 +26,6 @@
 - **Chrome DevTools:** Debugging, performance audits, and mobile emulation.
 
 ## In Progress
-- **AWS Cloud Practitioner:** Preparing for certification to deepen knowledge of scalable cloud infrastructure.  
-- **CompTIA Security+:** Studying cybersecurity fundamentals to expand backend and data protection skills.  
 - **AI Automation Workflows:** Exploring no-code/low-code tools and custom script integrations using GPT-based agents.
 
 ## Soft Skills

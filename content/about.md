@@ -1,10 +1,16 @@
 # About Me
 
-I’m a passionate full-stack web developer dedicated to building useful, user-friendly applications. As a 100% disabled U.S. veteran, I bring discipline and resilience to every project. I recently graduated from the TripleTen coding bootcamp, where I honed my skills by creating real-world web applications. My mission is to turn ideas into elegant, accessible web solutions that make a positive impact.
+My journey into tech wasn’t linear — but it was inevitable.
 
-With hands-on experience in React, Firebase, and mobile-first design, I’ve built full-stack apps like **Green Findr** (a Google Maps-integrated park locator), an **HVAC CMS** tool for field technicians, and **RememberMe AI**, a personalized assistant created during a hackathon. These projects reflect my ability to move fast, solve real problems, and create clean, responsive interfaces that work well on any device.
+I started dabbling with code back in the day, just messing around with HTML and scripts for fun. Then life took a turn — I joined the U.S. military, where I spent years maintaining helicopters and learning the kind of discipline you can’t fake. That experience shaped who I am: focused, adaptable, and never one to back down from a challenge.
 
-Before tech, I served in the U.S. Army as a UH-60 Black Hawk helicopter maintainer in the 160th Special Operations Aviation Regiment. That high-stakes environment demanded precision, accountability, and teamwork — qualities I now bring into every codebase and collaboration.
+Now, I’m a full-stack developer with about four years of hands-on experience and a deep drive to build things that matter. I’ve honed my skills across both frontend and backend — from crafting responsive interfaces in React and CSS, to deploying robust Node.js apps with MongoDB, Nginx, and PM2. I’m comfortable at every layer of the stack, and I treat clean code, meaningful UX, and secure deployments with the same care I brought to every mission in uniform.
 
-I’m currently upskilling in AI automation workflows and cloud certifications (AWS and CompTIA Security+), and I’m always seeking ways to level up both technically and professionally. Whether I’m writing code, helping teammates, or learning something new, I’m driven by the same values: clarity, growth, and impact.
+But behind the code, I’m a father, a gamer, a boxing fan, and a lifelong learner who genuinely loves technology. I’m family-oriented and purpose-driven — everything I do in tech is guided by a desire to create positive change and leave things better than I found them.
+
+I’m a 100% disabled veteran with something to prove — not to anyone else, but to myself. I’ve already fought to rebuild my life. Now I’m fighting to help others through software.
+
+Let’s build something that matters.
+
+
 
