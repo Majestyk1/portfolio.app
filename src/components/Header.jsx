@@ -58,7 +58,7 @@ const Header = () => {
             {/* Mobile menu button */}
             <div className="header__menu-toggle md:hidden">
               <button
-                className="header__menu-button text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                className="header__menu-button text-blue-400 cursor-pointer hover:scale-105 transition-transform"
                 aria-label="Open navigation"
                 onClick={() => setSidebarOpen(true)}
               >
