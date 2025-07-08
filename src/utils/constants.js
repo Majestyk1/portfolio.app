@@ -26,7 +26,7 @@ export const SOCIAL_LINKS = [
 
 // Site metadata
 export const SITE_CONFIG = {
-  title: 'S.O.G. - Full-Stack Developer',
+  title: 'Majestyk Vaughns - Full-Stack Developer',
   description: 'Disabled veteran turned full-stack developer. I build things that matter.',
-  author: 'S.O.G.'
+  author: 'Majestyk Vaughns'
 } 
