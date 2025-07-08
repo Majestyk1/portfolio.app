@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { NAV_LINKS } from '../utils/constants'
+import myLogo from '../assets/my-logo.svg'
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -28,10 +29,18 @@ const Header = () => {
           <div className="header__content flex items-center justify-between h-16">
             {/* Logo/Brand */}
             <div className="header__brand flex-shrink-0">
-              <h1 className="header__logo text-xl font-bold text-gray-900 dark:text-white">
-                Portfolio
-              </h1>
-            </div>
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              aria-label="Scroll to top"
+              className="header__logo-button hover:scale-105 transition-transform cursor-pointer"
+             >
+              <img 
+                src={myLogo} 
+                alt="Majestyk Vaughns logo" 
+                className="header__logo h-10 w-auto" 
+             />
+          </button>
+          </div>
 
             {/* Desktop Navigation */}
             <nav className="header__nav hidden md:flex space-x-8">
