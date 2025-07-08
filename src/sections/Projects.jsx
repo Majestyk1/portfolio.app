@@ -1,3 +1,5 @@
+import greenFindrPhoto from '../assets/greenfindr-logo.png'
+
 const Projects = () => {
   const projects = [
     {

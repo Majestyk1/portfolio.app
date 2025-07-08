@@ -65,21 +65,21 @@ const Header = () => {
       {/* Sidebar Overlay - only on mobile */}
       {sidebarOpen && (
         <div
-          className="sidebar__overlay fixed inset-0 bg-black bg-opacity-60 z-40 md:hidden"
+          className="sidebar__overlay fixed inset-0 bg-black/20 z-40 md:hidden"
           onClick={() => setSidebarOpen(false)}
           aria-label="Close navigation"
         ></div>
       )}
 
-      {/* Sidebar Drawer - only on mobile */}
+      {/* Sidebar Drawer - slides in from right, glassmorphic, full height */}
       <nav
         ref={sidebarRef}
-        className={`sidebar fixed top-0 right-0 h-full w-64 bg-gray-900 dark:bg-gray-800 shadow-lg z-50 transform transition-transform duration-300 ease-in-out
-          ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`
-        }
+        className={`sidebar fixed top-0 right-0 h-full w-64 bg-white/20 dark:bg-gray-900/40 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-l-lg shadow-xl z-50 p-6 flex flex-col transition-transform duration-300 ease-in-out md:hidden
+          ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
         tabIndex="-1"
         aria-modal="true"
         role="dialog"
+        style={{ willChange: 'transform' }}
       >
         <button
           className="sidebar__close absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
@@ -88,12 +88,12 @@ const Header = () => {
         >
           &times;
         </button>
-        <div className="sidebar__menu flex flex-col mt-20 space-y-6 px-8">
+        <div className="sidebar__menu flex flex-col mt-12 space-y-6">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="sidebar__link text-lg text-gray-200 hover:text-blue-400"
+              className="sidebar__link text-lg text-white dark:text-gray-100 hover:text-blue-400 transition-colors"
               onClick={() => setSidebarOpen(false)}
             >
               {link.label}
