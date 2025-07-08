@@ -10,7 +10,7 @@ const Hero = () => {
           
           {/* Main Heading */}
           <h1 className="hero__title text-5xl md:text-6xl lg:text-7xl font-bold text-gray-100 mb-4 leading-tight">
-            S.O.G.
+            Majestyk
           </h1>
           
           {/* Subtitle */}
