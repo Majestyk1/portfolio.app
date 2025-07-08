@@ -1,3 +1,5 @@
+import profilePhoto from '../assets/portfolio-pic.jpg'
+
 const About = () => {
   return (
     <section id="about" className="about section-padding">
@@ -12,7 +14,7 @@ const About = () => {
         
         <div className="about__content grid lg:grid-cols-3 gap-12 lg:gap-16">
           {/* Story */}
-          <div className="about__story lg:col-span-2">
+          <div className="about__story lg:col-span-2 order-2 lg:order-none">
             <div className="about__text space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
                 My journey into tech wasn't linear — but it was inevitable.
@@ -64,11 +66,11 @@ const About = () => {
           </div>
           
           {/* Photo */}
-          <div className="about__photo-container lg:col-span-1">
+          <div className="about__photo-container lg:col-span-1 order-1 lg:order-none">
             <div className="about__photo-wrapper relative max-w-sm mx-auto">
               <div className="about__photo-frame relative">
                 <div className="about__photo bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg aspect-square flex items-center justify-center text-6xl font-bold text-white">
-                  S.O.G
+                <img src={profilePhoto} alt="photo of Majestyk Vaughns" className="about__photo w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="about__photo-border absolute inset-0 border-2 border-blue-400 rounded-lg transform translate-x-4 translate-y-4 -z-10"></div>
               </div>

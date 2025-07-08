@@ -44,12 +44,12 @@ const Projects = () => {
   return (
     <section id="projects" className="projects section-padding">
       <div className="projects__container container">
-        <div className="projects__header mb-16">
+        <div className="projects__header inline-block mb-16">
           <h2 className="projects__title text-3xl md:text-4xl font-bold text-gray-100 mb-4">
             <span className="text-blue-400 font-mono text-xl mr-4">02.</span>
             Some Things I've Built
           </h2>
-          <div className="projects__title-line h-px bg-gray-600 max-w-sm"></div>
+          <div className="projects__title-line h-px bg-gray-600 w-full"></div>
         </div>
 
         {/* Featured Projects */}
