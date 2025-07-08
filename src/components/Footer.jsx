@@ -14,6 +14,8 @@ const Footer = () => {
                 key={link.name}
                 href={link.href} 
                 className="footer__social-link text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="sr-only">{link.name}</span>
                 {link.icon === 'github' && (

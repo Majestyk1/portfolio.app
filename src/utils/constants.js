@@ -9,12 +9,12 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   {
     name: 'GitHub',
-    href: 'https://github.com/yourusername',
+    href: 'https://github.com/Majestyk1',
     icon: 'github'
   },
   {
     name: 'LinkedIn', 
-    href: 'https://linkedin.com/in/yourusername',
+    href: 'https://www.linkedin.com/in/majestyk-vaughns',
     icon: 'linkedin'
   },
   {
