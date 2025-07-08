@@ -19,7 +19,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: 'Email',
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:Majestyk.vaughns@gmail.com',
     icon: 'email'
   }
 ]

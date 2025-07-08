@@ -26,7 +26,7 @@ const Contact = () => {
           
           <div className="contact__action">
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:Majestyk.vaughns@gmail.com" 
               className="contact__cta btn-primary inline-block px-8 py-4 text-lg font-medium rounded-lg transition-all duration-200 hover:shadow-lg hover:transform hover:-translate-y-1"
             >
               Say Hello
