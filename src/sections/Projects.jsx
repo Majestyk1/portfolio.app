@@ -142,7 +142,7 @@ const Projects = () => {
           <h3 className="projects__other-title text-2xl font-bold text-gray-100 mb-8 text-center">
             Other Noteworthy Projects
           </h3>
-          <div className="projects__other-grid grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={`projects__other-grid gap-6 ${otherProjects.length === 1 ? 'flex justify-center' : 'grid md:grid-cols-2 lg:grid-cols-3'}`}>
             {otherProjects.map((project) => (
               <div key={project.id} className="project-card__small bg-gray-800 rounded-lg p-6 hover:transform hover:-translate-y-2 transition-all duration-300">
                 <div className="project-card__small-header flex justify-between items-center mb-4">
