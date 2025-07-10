@@ -20,7 +20,7 @@ const Projects = () => {
       description: 'A modern, fully responsive HVAC company website built with React, featuring optimized performance, professional design, and integrated third-party services. Successfully deployed to production with Vercel.',
       tech: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
       github: 'https://github.com/Majestyk1/airdoctor-refactor/tree/main',
-      live: 'https://airdoctor-refactor-buykrtg9w-majestyk1s-projects.vercel.app',
+      live: 'https://airdoctor-refactor.vercel.app/',
       featured: true,
       image: airdoctorLogo
     },
