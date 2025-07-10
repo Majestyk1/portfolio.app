@@ -40,7 +40,7 @@ const Projects = () => {
       description: 'This very site! Built from scratch with Vite and Tailwind, featuring polished animations, mobile-first design, and clean dark theme with dynamic Markdown content.',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/Majestyk1/portfolio.app',
-      live: '#',
+      live: 'https://majestyk-vaughns.space',
       featured: false
     }
   ]

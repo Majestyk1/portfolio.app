@@ -21,7 +21,7 @@
 
 ---
 
-### Portfolio Website (This Site)
+### Portfolio Website -> (https://majestyk-vaughns.space)
 **Role:** Developer & Designer  
 **Tech:** React, Vite, Tailwind CSS, Framer Motion, Netlify  
 **Description:** A single-page developer portfolio to showcase who I am, what I’ve built, and where I’m going. Built from scratch using Vite and Tailwind, the site includes polished animations, mobile-first design, and a clean dark theme. The content is dynamically sourced from Markdown files for easy updates and iteration. This project reflects my attention to detail, visual design principles, and end-to-end project execution.
