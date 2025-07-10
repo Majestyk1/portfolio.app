@@ -7,7 +7,7 @@ const Projects = () => {
     {
       id: 'green-findr',
       title: 'Green Findr',
-      description: 'A sustainable business directory to help users locate eco-friendly shops and services. Features interactive Google Maps integration, Firebase backend, and responsive dark-themed UI.',
+      description: 'This website was created to assist its users to find parks and recreational places during any vacation that they are on, or are planning to take. By searching any location or address in the search bar, Green Findr will locate the closest park for your enjoyment, and have the capability of saving your favorite parks!',
       tech: ['React', 'Tailwind CSS', 'Firebase', 'Google Maps API'],
       github: 'https://github.com/ThePaladin000/June-Code-Jam',
       live: 'https://greenfindr.us',
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       id: 'airdoctor-refactor',
       title: 'AirDoctor',
-      description: 'Custom content management system for HVAC technicians to log service calls, manage parts inventory, and track customer information. Improved real business workflow.',
+      description: 'A modern, fully responsive HVAC company website built with React, featuring optimized performance, professional design, and integrated third-party services. Successfully deployed to production with Vercel.',
       tech: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
       github: 'https://github.com/Majestyk1/airdoctor-refactor/tree/main',
       live: 'https://airdoctor-refactor-buykrtg9w-majestyk1s-projects.vercel.app',
