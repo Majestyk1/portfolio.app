@@ -30,7 +30,7 @@ const Projects = () => {
       description: 'Full-stack weather-powered clothing recommendation app. Fetches real-time weather data and suggests appropriate outfits based on conditions and user preferences.',
       tech: ['React', 'Express.js', 'MongoDB', 'Nginx', 'PM2', 'Certbot', 'Google Cloud Platform (GCP)'],
       github: 'https://github.com/Majestyk1/se_project_express',
-      live: 'https://www.wtw.epicgamer.org',
+      live: 'https://www.wtw.r-o-o-t.net',
       featured: true,
       image: wtwrLogo
     },
