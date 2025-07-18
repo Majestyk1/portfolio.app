@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="hero" className="hero min-h-screen flex items-center py-12 sm:py-16 md:py-20">
+    <section id="hero" className="hero min-h-screen pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 md:pb-20">
       <div className="hero__container container">
         <div className="hero__content max-w-4xl">
           {/* Greeting */}
