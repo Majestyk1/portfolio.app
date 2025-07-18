@@ -25,8 +25,8 @@ const Header = () => {
   return (
     <>
       <header className="header sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-        <div className="header__container container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="header__content flex items-center justify-between h-16">
+        <div className="header__container container mx-auto px-3 sm:px-4 lg:px-8">
+          <div className="header__content flex items-center justify-between h-14 sm:h-16">
             {/* Logo/Brand */}
             <div className="header__brand flex-shrink-0">
             <button 
@@ -37,7 +37,7 @@ const Header = () => {
               <img 
                 src={myLogo} 
                 alt="Majestyk Vaughns logo" 
-                className="header__logo h-10 w-auto" 
+                className="header__logo h-8 sm:h-10 w-auto" 
              />
           </button>
           </div>
@@ -58,11 +58,11 @@ const Header = () => {
             {/* Mobile menu button */}
             <div className="header__menu-toggle md:hidden">
               <button
-                className="header__menu-button text-blue-400 cursor-pointer hover:scale-105 transition-transform"
+                className="header__menu-button text-blue-400 cursor-pointer hover:scale-105 transition-transform p-1"
                 aria-label="Open navigation"
                 onClick={() => setSidebarOpen(true)}
               >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>

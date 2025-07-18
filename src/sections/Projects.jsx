@@ -17,7 +17,7 @@ const Projects = () => {
     {
       id: 'airdoctor-refactor',
       title: 'AirDoctor',
-      description: 'A modern, fully responsive HVAC company website built with React, featuring optimized performance, professional design, and integrated third-party services. Successfully deployed to production with Vercel.',
+      description: 'A modern, fully responsive HVAC company website built with React, featuring optimized performance, professional design, and integrated third-party services. Built a custom personal CMS using Firebase for content management, allowing easy updates to services, testimonials, and company information. Successfully deployed to production with Vercel.',
       tech: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
       github: 'https://github.com/Majestyk1/airdoctor-refactor/tree/main',
       live: 'https://airdoctor-refactor.vercel.app/',

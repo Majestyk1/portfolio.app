@@ -15,6 +15,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Prevent font scaling issues on mobile */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   
   body {
@@ -82,4 +87,31 @@
   backdrop-filter: blur(0.2px);
   filter: blur(0.1px);
 }
+}
+
+/* Mobile-specific fixes for different device settings */
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+  
+  .header {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Handle very small screens */
+@media screen and (max-width: 360px) {
+  .hero__title {
+    font-size: 2.5rem !important;
+  }
+  
+  .hero__subtitle {
+    font-size: 2rem !important;
+  }
+  
+  .hero__greeting {
+    font-size: 0.875rem !important;
+  }
 }
