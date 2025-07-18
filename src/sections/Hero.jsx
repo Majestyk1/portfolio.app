@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="hero" className="hero min-h-screen pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 md:pb-20">
+    <section id="hero" className="hero min-h-screen pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 md:pb-16">
       <div className="hero__container container">
         <div className="hero__content max-w-4xl">
           {/* Greeting */}
@@ -19,7 +19,7 @@ const Hero = () => {
           </h2>
           
           {/* Description */}
-          <div className="hero__description max-w-2xl mb-8 sm:mb-12">
+          <div className="hero__description max-w-2xl mb-6 sm:mb-8">
             <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-4 sm:mb-6">
               I'm a full-stack developer and disabled veteran who turned military discipline 
               into code craftsmanship. From maintaining helicopters to building web applications, 

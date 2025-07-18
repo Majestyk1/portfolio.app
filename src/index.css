@@ -20,10 +20,17 @@
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
   }
   
   body {
     @apply font-sans antialiased;
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   
   /* Custom scrollbar */
@@ -48,6 +55,10 @@
 @layer components {
   .container {
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+    /* Ensure container doesn't overflow - use 100% instead of 100vw */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .section-padding {
@@ -89,6 +100,21 @@
 }
 }
 
+/* Sidebar overflow fixes */
+.sidebar--closed {
+  right: -16rem; /* -256px keeps it completely off-screen */
+  width: 0;
+  pointer-events: none;
+  transform: none;
+}
+
+.sidebar--open {
+  right: 0;
+  width: 16rem; /* 256px */
+  pointer-events: auto;
+  transform: none;
+}
+
 /* Mobile-specific fixes for different device settings */
 @media screen and (max-width: 480px) {
   .hero {
@@ -98,6 +124,21 @@
   
   .header {
     padding: 0.5rem 0;
+  }
+  
+  /* Prevent horizontal overflow on mobile */
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+  
+  .hero__title,
+  .hero__subtitle {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 

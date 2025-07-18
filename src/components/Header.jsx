@@ -83,12 +83,11 @@ const Header = () => {
       {/* Sidebar Drawer - slides in from right, glassmorphic, full height */}
       <nav
         ref={sidebarRef}
-        className={`sidebar fixed top-0 right-0 h-full w-64 bg-white/20 dark:bg-gray-900/40 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-l-lg shadow-xl z-50 p-6 flex flex-col transition-transform duration-300 ease-in-out md:hidden
-          ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`sidebar fixed top-0 h-full bg-white/20 dark:bg-gray-900/40 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-l-lg shadow-xl z-50 p-6 flex flex-col transition-all duration-300 ease-in-out md:hidden
+          ${sidebarOpen ? 'sidebar--open' : 'sidebar--closed'}`}
         tabIndex="-1"
         aria-modal="true"
         role="dialog"
-        style={{ willChange: 'transform' }}
       >
         <button
           className="sidebar__close absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
