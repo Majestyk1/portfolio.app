@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Header />
-      <main className="layout__main flex-1">
+      <main className="layout__main flex-1 pt-14 sm:pt-16">
         {children}
       </main>
       <Footer />
