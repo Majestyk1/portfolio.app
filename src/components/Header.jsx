@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import { NAV_LINKS } from '../utils/constants'
 import myLogo from '../assets/my-logo.svg'
+import { useTheme } from '../contexts/ThemeContext'
 
 const Header = () => {
+  const { isDark, toggleTheme } = useTheme()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const sidebarRef = useRef(null)
 
@@ -48,24 +50,44 @@ const Header = () => {
                 <a 
                   key={link.href}
                   href={link.href} 
-                  className="header__link text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-blue-400 transition-colors"
+                  className="header__link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
 
-            {/* Mobile menu button */}
-            <div className="header__menu-toggle md:hidden">
+            {/* Actions: theme toggle + mobile menu */}
+            <div className="header__actions flex items-center gap-2">
               <button
-                className="header__menu-button text-blue-400 cursor-pointer hover:scale-105 transition-transform p-1"
-                aria-label="Open navigation"
-                onClick={() => setSidebarOpen(true)}
+                onClick={toggleTheme}
+                aria-label="Toggle theme"
+                className="header__theme-toggle p-2 rounded-md border border-gray-200 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
               >
-                <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                {isDark ? (
+                  // Moon icon
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+                  </svg>
+                ) : (
+                  // Sun icon
+                  <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 18a6 6 0 100-12 6 6 0 000 12zm0 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm0-20a1 1 0 01-1-1V0a1 1 0 112 0v1a1 1 0 01-1 1zm10 10a1 1 0 011 1h1a1 1 0 110 2h-1a1 1 0 01-1-1 1 1 0 011-1zM1 12a1 1 0 011-1H1a1 1 0 110 2h1a1 1 0 01-1-1zm16.95 6.95a1 1 0 011.41 0l.71.71a1 1 0 11-1.41 1.41l-.71-.71a1 1 0 010-1.41zM3.93 4.22a1 1 0 000 1.41l.71.71A1 1 0 006.05 5l-.71-.71a1 1 0 00-1.41 0zM19.66 4.22a1 1 0 00-1.41 0L17.54 5a1 1 0 001.41 1.41l.71-.71a1 1 0 000-1.41zM4.22 17.66a1 1 0 011.41 0l.71.71A1 1 0 015 19.78l-.71-.71a1 1 0 010-1.41z" />
+                  </svg>
+                )}
               </button>
+              {/* Mobile menu button */}
+              <div className="header__menu-toggle md:hidden">
+                <button
+                  className="header__menu-button text-blue-400 cursor-pointer hover:scale-105 transition-transform p-1"
+                  aria-label="Open navigation"
+                  onClick={() => setSidebarOpen(true)}
+                >
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -83,14 +105,14 @@ const Header = () => {
       {/* Sidebar Drawer - slides in from right, glassmorphic, full height */}
       <nav
         ref={sidebarRef}
-        className={`sidebar fixed top-0 h-full bg-white/20 dark:bg-gray-900/40 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-l-lg shadow-xl z-50 p-6 flex flex-col transition-all duration-300 ease-in-out md:hidden
+        className={`sidebar fixed top-0 h-full bg-white/80 dark:bg-gray-900/40 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-l-lg shadow-xl z-50 p-6 flex flex-col transition-all duration-300 ease-in-out md:hidden
           ${sidebarOpen ? 'sidebar--open' : 'sidebar--closed'}`}
         tabIndex="-1"
         aria-modal="true"
         role="dialog"
       >
         <button
-          className="sidebar__close absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
+          className="sidebar__close absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-2xl"
           onClick={() => setSidebarOpen(false)}
           aria-label="Close navigation"
         >
@@ -101,7 +123,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="sidebar__link text-lg text-white dark:text-gray-100 hover:text-blue-400 transition-colors"
+              className="sidebar__link text-lg text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               onClick={() => setSidebarOpen(false)}
             >
               {link.label}

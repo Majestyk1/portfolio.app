@@ -11,34 +11,41 @@ export const useTheme = () => {
 }
 
 export const ThemeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(true) // Default to dark mode
+  const [isDark, setIsDark] = useState(() => {
+    try {
+      const stored = localStorage.getItem('theme')
+      if (stored) return stored === 'dark'
+      if (typeof window !== 'undefined' && window.matchMedia) {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches
+      }
+    } catch (_) {}
+    return false
+  })
 
+  // Keep theme in sync with system preference when there is no stored preference
   useEffect(() => {
-    // Check if user has a preference stored
     const stored = localStorage.getItem('theme')
-    if (stored) {
-      setIsDark(stored === 'dark')
-    } else {
-      // Check system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-      setIsDark(prefersDark)
-    }
+    if (stored) return
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = (e) => setIsDark(e.matches)
+    media.addEventListener('change', handleChange)
+    return () => media.removeEventListener('change', handleChange)
   }, [])
 
   useEffect(() => {
-    // Update HTML class and localStorage
+    // Update HTML/body classes and localStorage
     const html = document.documentElement
-    if (isDark) {
-      html.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-    } else {
-      html.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
-    }
+    const body = document.body
+    html.classList.toggle('dark', isDark)
+    body.classList.toggle('dark', isDark)
+    html.setAttribute('data-theme', isDark ? 'dark' : 'light')
+    try {
+      localStorage.setItem('theme', isDark ? 'dark' : 'light')
+    } catch (_) {}
   }, [isDark])
 
   const toggleTheme = () => {
-    setIsDark(!isDark)
+    setIsDark((prev) => !prev)
   }
 
   return (
